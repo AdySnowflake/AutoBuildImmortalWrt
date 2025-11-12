@@ -43,6 +43,8 @@ PACKAGES="$PACKAGES perlbase-base perlbase-file perlbase-time perlbase-utf8 perl
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-amlogic luci-i18n-amlogic-zh-cn"
 # Frp 客户端
 PACKAGES="$PACKAGES luci-i18n-frpc-zh-cn"
+# 预装软件包，以便开箱即用
+PACKAGES="$PACKAGES tinyionice"
 
 echo "🔄 正在同步第三方软件仓库 Cloning run file repo..."
 git clone --depth=1 https://github.com/wukongdaily/store.git /tmp/store-run-repo
